@@ -1,0 +1,170 @@
+body{
+    /*background-color: gray;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+#selectType{
+    position: relative;
+    width: 75%;
+    height: 80%;
+    background-color: rgba(46, 91, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;;
+}
+.close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;;
+}
+.card{
+    position: relative;
+    background-size: cover;
+    width: 350px;
+    height: 400px;
+    margin-left: 150px;
+    background-color: green;
+    border: 2px solid black;
+    box-shadow: 0px 0px 3px black;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    transition: ease-in-out 0.3s;
+}
+.card:hover{
+    transform: translateY(-2%);
+}
+.cardText{
+    position: relative;
+    color: indigo;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 42px;
+    text-shadow: 2px 2px 4px black;
+    user-select: none;
+}
+#confirmSelect{
+    position: absolute;
+    width: 95%;
+    height: 50%;
+    font-size: 48px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    background-color: grey;
+    border-radius: 25px;
+    transition: ease-in-out 2s;
+}
+button{
+    width: 200px;
+    height: 50px;
+    border: 3.5px dashed black;
+    font-size: 36px;
+}
+#acceptHeist{
+    background-color: green;
+}
+#denyHeist{
+    background-color: red;
+}
+
+
+/**/
+
+#makeC4{
+    position: relative;
+    width: 75%;
+    height: 80%;
+    background-color: rgba(53, 0, 0, 0.8);
+    font-size: 38px;
+}
+.counterTask{
+    text-align: center;
+
+}
+
+
+/**/
+
+#hackAlarm{
+    display: flex;
+    width: 90%;
+    height: 90%;
+    justify-content: center;
+    align-items: center;
+}
+#alarmSecurityquestion{
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    width: 100%;
+    height: 100%;
+    background-color: grey;
+    justify-content: center;
+}
+#alarmTerminal{
+    display: block;
+    padding: 40px 40px 40px 40px;
+    font-size: 18px;
+    width: 100%;
+    height: 100%;
+    color: green;
+    background-color: black;
+    justify-content: center;
+    overflow: hidden;
+}
+#terminalArrow{
+    font-size: 18px;
+    width: 100%;
+    border: none;
+    outline: unset;
+    color: green;
+    background-color: black;
+}
+
+
+/**/
+
+#hackInside{
+    display: flex;
+    width: 90%;
+    height: 90%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: gray;
+}
+.servers{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.packet{
+    position: absolute;
+    width: 65px;
+    height: 70px;
+    background-color: cornflowerblue;
+    border: 2px solid black;
+}
+
+#area{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border: 3px solid green;
+}
