@@ -19,7 +19,7 @@ function main(){
         confirm.removeAttribute("hidden");
         setTimeout(() => {
             confirm.style.opacity = "1";
-            confirmText.innerText = "2. Uwaga wybierasz cichy napad który charakteryzuje się większą szansą na spierdolenie go w trakcie oraz większym łupem łupem.";
+            confirmText.innerText = "2. Uwaga wybierasz cichy napad który charakteryzuje się większą szansą na spierdolenie go w trakcie oraz większym łupem.";
         }, 500);
     })
 
@@ -113,13 +113,25 @@ function main(){
 
             var command = terminalArrow.value.split(" ")[0];
             var parameters = [terminalArrow.value.split(" ")[1], terminalArrow.value.split(" ")[2]];
-            //console.log(command);
+            console.log("Komenda: " + command + " Parametry: " + parameters + " Klawisz: " + e.key);
 
 
-            if(command == "help"){
-                terminalSendedCommands.innerText += `\n Commands: \n cd: changes current directroy \n cls: clears console \n dir: display files and folders in current directroy \n exit: quits terminal help: shows this message \n open: opens file \n del: deletes file`
+            if(command == "fix"){
+                terminalSendedCommands.innerText = "";
+                terminalSendedCommands.innerHTML = "";
+
+                document.getElementById("terminalSendedCommands").remove();
+                //terminalSendedCommands.remove();
+                var newSendedCommands = document.createElement("div");
+                newSendedCommands.id = "terminalSendedCommands";
+                terminalSendedCommands = newSendedCommands;
+                alarmTerminal.insertBefore(newSendedCommands, alarmTerminal.firstChild);
+            }
+            else if(command == "help"){
+                terminalSendedCommands.innerText += `\n Commands: \n fix: fixes terminal when not working \n cd: changes current directroy \n cls: clears console \n dir: display files and folders in current directroy \n exit: quits terminal help: shows this message \n open: opens file \n del: deletes file`
             }
             else if(command == "cls"){
+                console.log("clear");
                 terminalSendedCommands.innerText = "";
             }
             else if(command == "cd"){
@@ -141,6 +153,7 @@ function main(){
                 terminalSendedCommands.innerText += `\n Current directory ${currentDir}`;
             }
             else if(command == "dir"){
+                console.log(currentDir);
                 for (let index = 0; index < emptydirs.length; index++) {
                     var element = emptydirs[index];
                     if(currentDir == element) {terminalSendedCommands.innerText += `\n Nothing in curret directory : ${currentDir}`; break;}
@@ -166,18 +179,18 @@ function main(){
             else if (command == "open"){
                 if(currentDir == "/home/maintenancework" && parameters[0] == "readme.txt"){
                     //var rng = Math.floor(Math.random() * (4 - 2)) + 2;
-                    terminalSendedCommands.innerText += `\n Opening readme.txt...`;
+                    terminalSendedCommands.innerText += "\n Opening readme.txt...";
                     //setTimeout(() => {
-                        terminalSendedCommands.innerText += `\n Content of readme.txt: \n Hey new worker ! Thats a simple guide how to disable alarm for maintenance work,`
-                        terminalSendedCommands.innerText += ` first at all run the maintenancework.exe file than remove the alarmhandler.dll, thats all.`;
+                        terminalSendedCommands.innerText += "\n Content of readme.txt: \n Hey new worker ! Thats a simple guide how to disable alarm for maintenance work,";
+                        terminalSendedCommands.innerText += " first at all run the maintenancework.exe file than remove the alarmhandler.dll, thats all.";
                     //}, 2000);
                 }
-                if(currentDir == "/home/maintenancework" && parameters[0] == "maintenancework.exe"){
-                    terminalSendedCommands.innerText += `\n Activating maintenance works...`;
+                else if(currentDir == "/home/maintenancework" && parameters[0] == "maintenancework.exe"){
+                    terminalSendedCommands.innerText += "\n Activating maintenance works...";
                     //var rng = Math.floor(Math.random() * (4 - 2)) + 2;
                     //setTimeout(() => {
                         mworksactivated = true;
-                        terminalSendedCommands.innerText += `\n Maintenance works activated !`;
+                        terminalSendedCommands.innerText += "\n Maintenance works activated !";
                     //}, rng * 1000);
                 }
                 else{terminalSendedCommands += "\n Error";}
@@ -204,7 +217,7 @@ function main(){
 
             terminalArrow.value = "";
         }
-    })
+    });
     /*var x = 0;
     setInterval(() => {
         if(x > 25) return;
