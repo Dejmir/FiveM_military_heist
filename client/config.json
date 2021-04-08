@@ -1,0 +1,130 @@
+{
+	"SpawnLocation1": {
+		"X": "62.897",
+		"Y": "6664.307",
+		"Z": "31.786",
+		"H": "254.465"
+	},
+	"SpawnLocation2": {
+		"X": "-2163.997",
+		"Y": "5242.719",
+		"Z": "17.432",
+		"H": "228.269"
+	},
+	"SpawnLocation3": {
+		"X": "-997.235",
+		"Y": "4854.409",
+		"Z": "274.606",
+		"H": "158.398"
+	},
+	"SpawnLocation4": {
+		"X": "3105.133",
+		"Y": "6029.986",
+		"Z": "123.384",
+		"H": "30.215"
+	},
+	"PowderLocation": {
+		"X": "2734.937",
+		"Y": "1579.652",
+		"Z": "66.538",
+		"H": "131.553"
+	},
+	"MakeC4Location": {
+		"X": "3301.235",
+		"Y": "5196.265",
+		"Z": "18.415",
+		"H": "101.947"
+	},
+	"HackingtoolLocation":{
+		"X": "668.802",
+		"Y": "1282.044",
+		"Z": "360.296",
+	},
+	"HackLocation":{
+		"X": "451.119",
+		"Y": "5567.597",
+		"Z": "796.696",
+	},
+	
+	"Loot":{
+		"Loud":{
+			"Cash": {
+				"min": "350000",
+				"max": "450000"
+			},
+			"DocumentsChance": "50", //1-100
+			"WeaponChance": "40", //1-100
+			"Weapons": ["weapon_pistol", "weapon_pistol_mk2", "weapon_combatpistol", "weapon_heavypistol", "weapon_revolver"],
+			"LongWeaponChance": "10", //1-1000
+			"LongWeapons": ["weapon_smg", "weapon_pumpshotgun"],
+			"AdditionalItem1": {
+				"enabled": "false",
+				"item": "costam_sztabkazlota",
+				"min": "5",
+				"max": "10",
+				"chance": "50"
+			},
+			"AdditionalItem2": {
+				"enabled": "false",
+				"item": "costam_sztabkazlota",
+				"min": "5",
+				"max": "10",
+				"chance": "50"
+			},
+			"AdditionalItem3": {
+				"enabled": "false",
+				"item": "costam_sztabkazlota",
+				"min": "5",
+				"max": "10",
+				"chance": "50"
+			},
+			"AdditionalItem4": {
+				"enabled": "false",
+				"item": "costam_sztabkazlota",
+				"min": "5",
+				"max": "10",
+				"chance": "50"
+			}
+			//You cant add more additinal items without modify code
+		},
+		"Silent":{
+			"Cash": {
+				"min": "450000",
+				"max": "650000"
+			},
+			"DocumentsChance": "90",
+			"WeaponChance": "65",
+			"Weapons": ["weapon_pistol", "weapon_pistol_mk2", "weapon_combatpistol", "weapon_heavypistol", "weapon_revolver"],
+			"LongWeaponChance": "100",
+			"LongWeapons": ["weapon_smg", "weapon_pumpshotgun"],
+			"AdditionalItem1": {
+				"enabled": "false",
+				"item": "costam_sztabkazlota",
+				"min": "5",
+				"max": "10",
+				"chance": "50"
+			},
+			"AdditionalItem2": {
+				"enabled": "false",
+				"item": "costam_sztabkazlota",
+				"min": "5",
+				"max": "10",
+				"chance": "50"
+			},
+			"AdditionalItem3": {
+				"enabled": "false",
+				"item": "costam_sztabkazlota",
+				"min": "5",
+				"max": "10",
+				"chance": "50"
+			},
+			"AdditionalItem4": {
+				"enabled": "false",
+				"item": "costam_sztabkazlota",
+				"min": "5",
+				"max": "10",
+				"chance": "50"
+			}
+		}
+	}
+}
