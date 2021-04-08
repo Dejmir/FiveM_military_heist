@@ -2,4 +2,4 @@
 
 description to do !
 
-Showcase: <a href="https://youtu.be/C4wJqKuE6rU" target="_blank">YT LINK</a>
+Showcase: [go](https://youtu.be/C4wJqKuE6rU){:target="_blank" rel="noopener"}
